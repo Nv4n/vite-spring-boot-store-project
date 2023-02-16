@@ -18,7 +18,7 @@ public class Order {
     private PaymentType ordPayment;
 
     public Order(LocalDate ordDate, List<String> ordProdsIdsLst, String ordCustomerId, String ordCustomerTelephone,
-                 String ordCustomerAddress, String ordComment, double ordTotalPrice, PaymentType ordPayment) {
+                    String ordCustomerAddress, String ordComment, double ordTotalPrice, PaymentType ordPayment) {
         this.ordId += (++ID);
 
         setOrdDate(ordDate);
