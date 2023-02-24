@@ -6,7 +6,7 @@ WORKDIR /app/frontend/
 COPY package*.json .
 
 # Install dependencies
-RUN npm ci
+RUN yarn
 
 # Copy the source code to WORKDIR dir
 COPY . .
@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 3000
 
 # run the app
-CMD ["npm", "run", "dev"]
+CMD ["yarn", "dev"]
