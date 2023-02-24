@@ -7,7 +7,7 @@ jobs:
             - image: spring-boot-backend
             - image: cimg/base:2022.11
               auth:
-                  username: mydockerhub-user
+                  username: sybatron
                   password: $DOCKERHUB_PASSWORD # context / project UI env-var reference
         parallelism: 4
         working_directory: /go/src/github.com/Nv4n/vite-spring-boot-store-project
