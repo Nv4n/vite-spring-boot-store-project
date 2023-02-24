@@ -56,3 +56,7 @@ jobs:
 
             - store_test_results:
                   path: /tmp/test-results
+workflows:
+    build_and_test:
+        jobs:
+            - build
